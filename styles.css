@@ -3,7 +3,7 @@
 }
 
 body{
-    margin: 0 ;
+    margin: 0;
 }
 
 main{
@@ -58,10 +58,14 @@ footer{
 
 .navbar a{
     color: white;
+    text-decoration: none;
     padding: 15px;
     display: block;
-    text-decoration: none;
     text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0, 0, 10%);
 }
 
 
