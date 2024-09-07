@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box; /*when we calculate the width all the elements should be aligned*/
+}
+
+body{
+    margin: 0 ;
+}
+
+main{
+    height: 100vh;
+}
+
+header{
+    background-color: hsl(0, 0%, 86%);
+    text-align: center;
+    padding: 25px;
+}
+
+.navbar{
+    background-color: hsl(0, 0%, 15%);
+    height: 50px;
+}
+
+aside{
+    width: 20%;
+    float: left; /*all other tags can float now that the aside only takes 20%*/
+    padding: 10px;
+}
+
+article{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+
+footer{
+    display: block;
+    clear: both; /*bc of the float property or something idk*/
+    background-color: hsl(0, 0%, 86%);
+    text-align: center;
+    padding: 25px;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0, 25%);
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar a{
+    color: white;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+@media screen and (max-width:600px){
+    aside, section, article{
+        width: 100%; /*each will take 100% of the space available*/
+
+    }
+}
