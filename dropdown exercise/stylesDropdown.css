@@ -1,5 +1,13 @@
+*{
+    margin: 0;
+}
+
 .dropdown{
     display: inline-block; /*to not activate the hover effect when we are in the header far from the button      */
+    width: 100%;
+    background: black;
+    position: fixed;
+    
 }
 
 .dropdown button{
@@ -8,6 +16,7 @@
     padding: 10px  15px;
     border: none;
     cursor: pointer;
+    
 }
 
 .dropdown a{
@@ -23,6 +32,7 @@
     position: absolute;
     min-width: 100px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    
 }
 
 .dropdown:hover .content{

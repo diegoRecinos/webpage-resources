@@ -4,18 +4,20 @@
 
 body{
     margin: 0;
+
 }
 
 main{
     height: 100vh;
+    /*margin-top: 50px;  *//*weird now works without margin*/
 }
-
+/*
 header{
     background-color: hsl(0, 0%, 86%);
     text-align: center;
     padding: 25px;
 }
-
+*/
 .navbar{
     background-color: hsl(0, 0%, 15%);
     height: 50px;
@@ -80,3 +82,55 @@ footer{
 
     }
 }
+
+
+/*-------------------------------------------------------*/
+*{
+    margin: 0;
+}
+
+.dropdown{
+    display: inline-block; /*to not activate the hover effect when we are in the header far from the button      */
+    width: 100%;
+    background: black;
+    position: fixed;
+    
+}
+
+.dropdown button{
+    background-color:hsl(0, 2%, 52%);
+    color: white;
+    padding: 10px  15px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content{
+    display: none;
+    background-color: hsl(0, 9%, 64%);
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover button{
+    background-color: hsl(0, 0%, 0%);
+}
+
+.dropdown a:hover{
+    background-color: hsla(0, 94%, 39%, 0.79);
+}
+
