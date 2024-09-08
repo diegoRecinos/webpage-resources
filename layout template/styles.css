@@ -35,7 +35,7 @@ nav ul li {
 }
 
 nav ul li button {
-    background-color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 0%);
     color: white;
     padding: 10px 15px;
     border: none;
@@ -65,7 +65,7 @@ nav ul li .content a {
 }
 
 nav ul li .content a:hover {
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 1%, 51%);
 }
 
 .container {
