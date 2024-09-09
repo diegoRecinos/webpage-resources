@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Example</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x" href="website-favicon112x112.png">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="AddLogoIMG.png" alt="">
+            <a href="index.html"> 
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                <path d="M480-480ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h320v80H200v560h560v-320h80v320q0 33-23.5 56.5T760-120H200Zm40-160h480L570-480 450-320l-90-120-120 160Zm440-320v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z"/></svg>
+                <!-- <img src="AddLogoIMG.png" alt="">--> 
+            </a> 
+
         </div>
         <nav>
             <ul>
@@ -48,16 +54,55 @@
             </ul>
         </nav>
     </header>
+    <!-- MAIN -->
+
     <div class="container">
-        <aside>aside</aside>
-        <main>main</main>
-        <section class="right">container</section>
+        <aside>
+            aside
+        </aside>
+        <main>
+            main
+        </main>
+        <section class="right">
+            container
+        </section>
     </div>
+
+    <!-- FOOTER -->
     <footer>
-        <div class="left-footer">Footer</div>
-        <div class="right-footer">
-            <p>El pie de página debe incluir enlaces adicionales como términos y condiciones, política de privacidad, y enlaces a redes sociales</p>
+        <div class="footer-content">
+            <div class="footer-left">
+
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-center">
+                <h3>Contact Us</h3>
+                <p>1234 Street Name, City, Country</p>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Phone: +123-456-7890</p>
+            </div>
+
+
+            <div class="footer-right">
+                <h3>Follow Us</h3>
+                <div class="socials">
+                    <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
         </div>
     </footer>
+    
 </body>
 </html>
